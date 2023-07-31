@@ -164,6 +164,11 @@ address {
   background-color: var(--color-ocean);
 }
 /* -------Advantage------- */
+.advantage-icon {
+  border-radius: 4px;
+  background: var(--color-cloud);
+  padding: 24px 100px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
