@@ -535,32 +535,28 @@ align-items: baseline;
   line-height: 1.5;
   letter-spacing: 0.04em;
   padding: 12px 24px;
-  transition-property:background-color, color ,box-shadow , border ;
-  transition-duration: 250ms , 250ms ,250ms ,250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1),cubic-bezier(0.4, 0, 0.2, 1),cubic-bezier(0.4, 0, 0.2, 1),cubic-bezier(0.4, 0, 0.2, 1);
+  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--color-ocean);
   color: var(--color-white);
   box-shadow:0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-  border: 1px solid transparent;
+  border-color:none;
 }
 .portfolio-iteam {
   border: 1px solid var(--color-cornflower);
   border-top: none;
   width: calc((100% - 48px) / 3);
   box-shadow: none;
-  transition-property:box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .portfolio-iteam:hover ,
 .portfolio-iteam:focus{
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.portfolio-iteam:hover .portfolio-cover{
-  transform: translateY(0);
+.portfolio-iteam:hover .portfolio-cover-text{
+  transform: translateY(0%);
 }
 .portfolio-img-list {
   display: flex;
@@ -591,24 +587,22 @@ align-items: baseline;
   position: relative;
   overflow: hidden;
 }
-.portfolio-cover{
-  position: absolute;
-  background-color: var(--color-iris);
-  top: 0;
-  height: 100%;
-  padding: 0 32px;
-  display: flex;
-  align-items: center;
-  transform: translateY(100%);
-  transition: transform 300ms linear;
 
-
-}
 .portfolio-cover-text {
   color: var(--color-cloud);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing:0.02em;
+  position: absolute;
+  background-color: var(--color-iris);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 40px 32px;
+  display: flex;
+  align-items: center;
+  transform: translateY(100%);
+  transition:  transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ------------------------------------Modal--------------------- */
 .backdrop {
