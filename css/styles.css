@@ -436,7 +436,7 @@ address {
   letter-spacing: 0.03em;
 }
 .footer-text {
-  color: var(-- color-cloud);
+  color: var(--color-cloud);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -446,12 +446,6 @@ address {
   margin-right: 16px;
 }
 
-.footer-info {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-right: 120px;
-}
 .footer-social-list {
   display: flex;
   gap: 16px;
@@ -476,6 +470,7 @@ address {
 .footer-container {
   display: flex;
   align-items: baseline;
+  gap: 120px;
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
