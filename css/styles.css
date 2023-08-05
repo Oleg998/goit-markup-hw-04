@@ -578,10 +578,7 @@ align-items: baseline;
 .portfolio-iteam:focus{
  box-shadow:10px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.portfolio-iteam:hover .portfolio-cover-text
-.portfolio-iteam:focus .portfolio-cover-text{
-  transform: translateY(0%);
-}
+
 .portfolio-img-list {
   display: flex;
   flex-wrap: wrap;
@@ -629,7 +626,7 @@ align-items: baseline;
   transition:  transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .portfolio-iteam:hover .portfolio-cover-text,
-  .portfolio-iteam:focus .portfolio-cover-text{
+  .portfolio-iteam:focus-within .portfolio-cover-text{
   transform: translateY(0%);
 }
 /* ------------------------------------Modal--------------------- */
