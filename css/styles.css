@@ -638,7 +638,7 @@ address {
   height: 100%;
   background-color: var(--color-navy-blue-modal);
   top: 0;
-  transform: opacity, visibility;
+  transition:opacity, visibility;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
